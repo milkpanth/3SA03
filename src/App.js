@@ -23,23 +23,6 @@ const prepareStateFromWord = (given_word) => {
 class App extends React.Component {
 
   state = prepareStateFromWord(message);
-  reset =()=>{
-    this.setState({
-      reset: this.state.reset + 1,
-      attempt: this.state.attempt = 1,
-      completed: !this.state.completed
-    })
-  }
-  activationHandler = (c) => {
-    let guess = [...this.state.guess, c]
-    this.setState({ guess })
-    if (guess.length == this.state.chars.length) {
-      if (guess.join('').toString() == this.state.word) {
-        this.setState({ guess: [], completed: true })
-      } else {
-        this.setState({ guess: [], attempt: this.state.attempt + 1 })
-      }
-    }
   }
  
   render() {
