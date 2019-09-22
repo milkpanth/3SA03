@@ -26,7 +26,6 @@ class App extends React.Component {
   reset =()=>{
     this.setState({
       reset: this.state.reset + 1,
-      attempt: this.state.attempt = 1,
       completed: !this.state.completed
     })
   }
