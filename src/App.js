@@ -1,8 +1,9 @@
 
 import React from 'react';
 import './App.css';
-import _ from 'lodash';
 import CharacterCard from './CharacterCard';
+import _ from 'lodash';
+
 
  
 let message = 'Hello'
@@ -71,10 +72,6 @@ class App extends React.Component {
         {
           this.state.completed && <h4>Complete</h4>
         }
-        {
-          this.state.completed &&<button onClick={this.reset}>Reset</button>
-        }
-        
       </div>
      
     )
